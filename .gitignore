@@ -1,2 +1,5 @@
+content/data/*
+content/apps/*
+content/images/*
 
 node_modules/*
