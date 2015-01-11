@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "jailbreak.js",
+  "sourceRoot": "",
+  "sources": [
+    "jailbreak.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;;;CAAA;CAAA;CAAA;CAAA,CAIA,MAAA,EAAA;CACI,CACE,EADF,KAAA;CACE,CAAc,EAAd,EAAA,MAAA;MADF;CALJ,GAIA;;CAJA,CASA,CAAO,GAAP,GAAQ;CACN,CAA8C,CAAA,EAAA,IAA9C,EAAA,CAAA,MAAA;CACE,GAAA,CAAkB,GAAL,KAAb,8IAAa;CADf,IAA8C;CADhD,EAAO;CATP"
+}
