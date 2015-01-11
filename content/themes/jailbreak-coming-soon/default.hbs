@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="stylesheet" href="{{asset "components/normalize-css/normalize.css"}}">
+    <link rel="stylesheet" href="{{asset "dist/styles/jailbreak.css"}}">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    {{ghost_head}} {{! Ghost outputs important style and meta data with this tag }}
+  </head>
+  <body class="{{body_class}}">
+
+    <div class="contain-to-grid fixed">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1 id="logo-title"><a href="/">{{@blog.title}}</a></h1>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li class="active"><a href="https://docs.google.com/forms/d/1UobBqkXvDFRcYgxR2rkR6ZiaLgNODiJM7r-L_tVJYxg/viewform">Apply Now</a></li>
+          </ul>
+
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li class="has-dropdown">
+              <a href="#">About</a>
+              <ul class="dropdown">
+                <li><a href="/about-jailbreak/">About Jailbreak</a></li>
+                <li><a href="/application-requirements/">Application Requirements</a></li>
+                <li><a href="/contact/">Contact Details</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    {{{body}}}
+
+    <footer class="main-footer">
+      <div class="row">
+        <div class="small-12 medium-6 columns">
+          <ul>
+            <li>
+              <a href="//twitter.com/jailbreakhq"><i class="fa fa-twitter"></i> @JailbreakHQ</a>
+            </li>
+            <li>
+              <a href="//facebook.com/JailbreakHQ/"><i class="fa fa-facebook"></i> JailbreakHQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <p class="copy-statement"><a href="{{@blog.url}}/">&copy; {{@blog.title}}</a></p>
+        </div>
+      </div>
+    </footer>
+
+    {{ghost_foot}} {{! Ghost outputs important scripts and data with this tag }}
+    <script src="{{asset "components/jquery/dist/jquery.min.js"}}"></script>
+    <script src="{{asset "components/jquery.countdown/dist/jquery.countdown.min.js"}}"></script>
+    <script src="{{asset "components/bower-foundation/js/foundation/foundation.js" }}"></script>
+    <script src="{{asset "components/bower-foundation/js/foundation/foundation.topbar.js" }}"></script>
+    <script src="{{asset "components/bower-foundation/js/foundation/foundation.accordion.js" }}"></script>
+    <script src="{{asset "dist/scripts/jailbreak.js"}}"></script>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Open+Sans&subset=latin,cyrillic">
+  </body>
+</html>

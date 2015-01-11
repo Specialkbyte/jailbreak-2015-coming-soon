@@ -1,0 +1,55 @@
+{{!< default}}
+
+<article class="row {{post_class}}">
+  <div class="small-12 columns">
+    {{#post}}
+      <header>
+        <h3>
+          <time datetime="{{date format='YYYY-MM-DD'}}" id="post-date">{{date format="DD MMM YYYY"}}</time>
+        </h3>
+        <p class="post-tags">
+          {{tags}}
+        </p>
+        <h3 class="post-title" id="post-title">{{{title}}}</h3>
+      </header>
+
+          {{content}}
+
+      <footer class="post-footer">
+        <div class="row post-author">
+          <div class="small-3 columns post-meta">
+            <div class="col-xs-3 col-md-2">
+              <img src="{{author.image}}" class="post-author-image" alt="">
+            </div>
+          </div>
+          <div class="small-9 columns">
+            <h3>{{author.name}}</h3>
+            <p>{{author.bio}}</p>
+          </div>
+        </div>
+
+        <div class="row post-share">
+          <div class="small-12 columns post-meta">
+            <h3>Share post</h3>
+            <a class="fa fa-twitter fa-social col-xs-3" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <span class="hidden">Twitter</span>
+            </a>
+            <a class="fa fa-facebook fa-social col-xs-3" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <span class="hidden">Facebook</span>
+            </a>
+            <a class="fa fa-google-plus fa-social col-xs-3" href="https://plus.google.com/share?url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <span class="hidden">Google+</span>
+            </a>
+            <a class="fa fa-vk fa-social col-xs-3" href="http://vk.com/share.php?url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <span class="hidden">VK</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    {{/post}}
+  </div>  
+</article>

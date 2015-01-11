@@ -1,0 +1,175 @@
+body, html 
+  height: 100%
+  margin: 0
+  padding: 0
+
+#logo-title
+  background: url(/assets/images/header-logo-small.png) no-repeat left center
+  text-indent: -9999px
+  width: 200px
+  height: 40px
+
+@media only screen and (min-width: 40.063em)
+  #logo-title
+    background: url(/assets/images/header-logo-large.png) no-repeat center center
+
+.cover
+  width: 100%
+  min-height: 100%
+
+#landing-header
+  background: $jb-light-grey
+  background: url(/assets/images/backgrounds/background1.jpg) no-repeat center center
+  width: 100%
+  min-height: 70%
+  position: relative
+  display: table
+  @include background-size-cover()
+  text-shadow: 1px 1px 3px #333;
+
+#landing-content
+  display: table-cell
+
+  h3
+    color: white
+    text-align: center
+    font-weight: 900
+    font-size: 70%
+    letter-spacing: 1px
+
+#jb-logo
+  background-image: url(/assets/images/logo-small.png)
+  background-repeat: no-repeat
+  background-position: center
+  text-indent: -9999px
+  height: 75px
+
+@media only screen and (min-width: 40.063em)
+  #jb-logo
+    background-image: url(/assets/images/logo-large.png)
+    height: 150px
+    margin-top: 25px
+
+  #landing-content
+    h3
+      font-size: 120%
+
+#cover-cta-box
+  height: 31%
+  margin: 0
+
+.cta-box
+  background: $jb-black
+  border-bottom: 2px solid $jb-light-grey
+  padding: 20px 0
+  text-align: center
+  margin: 40px 0
+
+  h3, h5
+    margin-top: 0
+    color: white
+
+  h5
+    margin-bottom: 20px
+
+  p
+    color: white
+    margin-bottom: 25px
+    font-size: 14px
+
+  a.button
+    margin-bottom: 0
+
+.main-content
+  margin-top: 40px
+
+.faq-header
+  margin-bottom: 0
+
+.faq-title
+  padding-right: 27px !important
+  position: relative
+
+.faq-title:after
+  font-family: 'FontAwesome'
+  content: "\f0dd"
+  position: absolute
+  right: 10px
+  top: 50%
+  margin-top: -16px
+
+.accordion
+  margin-left: 0
+
+.accordion-navigation
+  margin-top: 20px
+  margin-left: 0
+
+.accordion-navigation:first-child
+  margin-top: 7px
+
+$countdown-timer-border: 1px solid rgba(255, 255, 255, 0.4)
+
+#countdown-timer
+  margin: 30px 0
+  color: white
+  text-align: center
+
+  ul
+    margin: 0
+    padding: 0
+
+    li
+      margin: 0
+      padding: 20px 10px
+      list-style: none
+      display: inline-block
+      text-transform: lowercase
+      font-size: 12px
+      color: rgba(255, 255, 255, 0.6)
+      width: 38%
+
+      span
+        font-size: 30px
+        line-height: 40px
+        display: block
+        color: white
+        border: none
+
+  ul li:nth-child(1) 
+    border-right: $countdown-timer-border
+    border-bottom: $countdown-timer-border
+
+  ul li:nth-child(2)
+    border-bottom: $countdown-timer-border
+
+  ul li:nth-child(3)
+    border-right: $countdown-timer-border
+      
+
+@media only screen and (min-width: 40.063em)
+  #countdown-timer
+    margin: 50px 0
+
+    ul
+
+      li
+        padding: 40px 60px
+        border-right: $countdown-timer-border
+        border-bottom: 0
+        font-size: 14px
+        width: auto
+
+        span
+          font-size: 48px
+          line-height: 60px
+
+      :last-child
+        border-right: none
+
+    ul li:nth-child(1)
+        border-bottom: none
+
+    ul li:nth-child(2)
+        border-right: $countdown-timer-border
+        border-bottom: none
