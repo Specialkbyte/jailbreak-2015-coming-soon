@@ -37,6 +37,11 @@ module.exports = (grunt) ->
           ext: ".js"
         ]
 
+    # Components Directives
+    directives:
+      components:
+        src: "assets/src/scripts/components.js"
+        dest: "assets/dist/scripts/components.js"
     
     # Compile Sass to CSS -  destination : source
     sass:
@@ -64,7 +69,7 @@ module.exports = (grunt) ->
 
     concurrent:
       serve: ["coffee:dist", "sass:server", "autoprefixer"]
-      dist: ["jshint", "coffee:dist", "sass:dist", "autoprefixer"]
+      dist: ["jshint", "coffee:dist", "sass:dist", "directives", "autoprefixer"]
 
     
     # Simple config to run sass, jshint and coffee any time a js or sass file is added, modified or deleted
@@ -80,6 +85,10 @@ module.exports = (grunt) ->
       jshint:
         files: ["<%= jshint.files %>"]
         tasks: ["jshint"]
+
+      directives:
+        files: ["<%= paths.src %>/scripts/components.js"]
+        tasks: ["directives"]
 
   
   # Load the plug-ins
