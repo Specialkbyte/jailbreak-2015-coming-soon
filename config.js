@@ -30,8 +30,9 @@ config = {
         server: {
           host: '0.0.0.0',
           port: process.env.PORT
-        }
-      },
+        },
+        fileStorage: false
+    },
 
     // ### Development **(default)**
     development: {
