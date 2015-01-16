@@ -2,6 +2,10 @@
 // Setup your Ghost install for various environments
 // Documentation can be found at http://support.ghost.org/config/
 
+if (process.env.NODE_ENV == 'production') {
+    require('newrelic'); // new relic monitoring
+}
+
 var path = require('path'),
     config;
 
