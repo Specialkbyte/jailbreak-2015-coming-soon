@@ -4,6 +4,6 @@ A simple Ghost app (ghost.org) for the Jailbreak 2015 coming soon website. The G
 ### Custom Theme
 The theme is custom theme called `jailbreak-coming-soon`. It uses Foundation as a CSS platform. Theme is ready to go with SASS, SCSS, Coffeescript and limited Sprockets Directives support to make developing the theme easier on everyone. The built distributed static files are included in this repo because they are deployed currently onto the heroku node that runs this system.
 
-### Developing
+### Developing the Theme
 Run the ghost app in testing mode. Instructions on ghost.org.
-To develop the theme you will need bower, node and grunt installed. Use `grunt watch` to setup a file watcher that will rebuild the appropiate files whenever you make changes. The default `grunt` command builts the distribution files just once.
+To develop the theme you will need bower, node and grunt installed. Use `grunt watch` command inside the theme directory to setup a file watcher that will rebuild the appropiate theme files whenever you make changes. The default `grunt` command in the theme directory builts the distribution files just once.
